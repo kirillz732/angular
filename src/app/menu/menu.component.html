@@ -1,0 +1,23 @@
+<div class="select-source">
+  <form class="example-form">
+    <mat-form-field>
+      <mat-label>Select source</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let news of arrayOfNews" [value]="news.value">
+          {{news.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Filter">
+    </mat-form-field>
+
+    <button class="filter-button" mat-button>Filter</button>
+
+    <mat-checkbox class="my-news">Only created by me.</mat-checkbox>
+
+    <button class="add-article" mat-button (click)="addArticle()">Add Article</button>
+
+  </form>
+</div>

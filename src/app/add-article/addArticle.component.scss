@@ -1,0 +1,27 @@
+.form {
+  border: 1px solid black;
+}
+
+.news-form {
+  display: flex;
+}
+
+.first-column {
+  width: 50%;
+  padding: 20px;
+}
+
+.second-column {
+  width: 50%;
+  padding: 20px 20px 20px 0;
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0 0;
+}
+
+mat-form-field {
+  width: 100%;
+}

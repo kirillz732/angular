@@ -1,4 +1,21 @@
 .app {
   display: flex;
-  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+:host ::ng-deep {
+  app-main {
+    width: 100%;
+  }
+
+  app-add-article {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  app-news-details {
+    width: 80%;
+    margin: 0 auto;
+  }
 }

@@ -1,5 +1,17 @@
 .header {
+  display: flex;
   width: auto;
-  height: 50px;
-  border-bottom: 1px solid red;
+  align-items: center;
+  height: 40px;
+}
+
+.logo {
+  margin: 10px 0 0 10px;
+  background: url('../../assets/images/news.png') no-repeat;
+  width: 48px;
+  height: 48px;
+}
+
+.news-source {
+  margin: 10px auto;
 }

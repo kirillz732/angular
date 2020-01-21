@@ -1,0 +1,26 @@
+.news-details {
+  display: flex;
+  border: 1px solid black;
+  height: 300px;
+
+
+  .news-logo {
+    margin: 20px;
+    width: 180px;
+    height: 180px;
+    background: red;
+  }
+}
+
+.news-information {
+  padding: 20px 0 0 0;
+  width: 60%;
+}
+
+.news-title,.news-content,.news-date-time {
+  padding: 0 0 20px 0;
+}
+
+.menu-buttons {
+  padding: 20px 0 0 0;
+}

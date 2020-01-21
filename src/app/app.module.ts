@@ -6,9 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AddArticleComponent } from './add-article/addArticle.component';
+import { MenuComponent } from './menu/menu.component';
+import { NewsComponent } from './news/news.component';
+import { NewsDetailsComponent } from './news-details/news-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material/typings/select';
+import { MatButtonModule } from '@angular/material/typings/esm5/button';
+import { MatCheckboxModule } from '@angular/material/typings/checkbox';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +24,22 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    SidebarComponent,
-    ContactComponent,
-    NotFoundComponent
+    AddArticleComponent,
+    NotFoundComponent,
+    MenuComponent,
+    NewsComponent,
+    NewsDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
