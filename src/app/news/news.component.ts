@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NewsComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
   }
@@ -16,5 +17,9 @@ export class NewsComponent implements OnInit {
 
   edit() {
     this.router.navigate(['/add']);
+  }
+
+  newsDetails() {
+    this.router.navigate(['/news-details']);
   }
 }
