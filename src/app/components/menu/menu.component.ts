@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { GetInfoService } from '../../services/get-info.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,19 +9,24 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private getInfoService: GetInfoService
+  ) {
   }
 
-  arrayOfNews = [
-    {value: 1, name: 'BBS'},
-    {value: 2, name: 'CDN'},
-    {value: 3, name: 'MY'},
-  ];
+  source = '';
+  selected = 'technology';
 
   ngOnInit() {
   }
 
   addArticle() {
     this.router.navigate(['/add']);
+  }
+
+  selectSource(event) {
+    this.source = event.value;
+    console.log(this.getInfoService.getNewsFromApi(5, this.source));
   }
 }

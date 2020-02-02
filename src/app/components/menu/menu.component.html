@@ -2,10 +2,14 @@
   <form class="example-form">
     <mat-form-field>
       <mat-label>Select source</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let news of arrayOfNews" [value]="news.value">
-          {{news.name}}
-        </mat-option>
+      <mat-select [(value)]="selected" (selectionChange)="selectSource($event)">
+          <mat-option value="technology">Technology</mat-option>
+          <mat-option value="entertainment">Entertainment</mat-option>
+          <mat-option value="general">General</mat-option>
+          <mat-option value="health">Health</mat-option>
+          <mat-option value="science">Science</mat-option>
+          <mat-option value="sports">Sports</mat-option>
+          <mat-option value="technology">Technology</mat-option>
       </mat-select>
     </mat-form-field>
 

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { MainComponent } from './main/main.component';
-import { AddArticleComponent } from './add-article/addArticle.component';
-import { NewsDetailsComponent } from './news-details/news-details.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { MainComponent } from './components/main/main.component';
+import { AddArticleComponent } from './components/add-article/addArticle.component';
+import { NewsDetailsComponent } from './components/news-details/news-details.component';
 
 
 const routes: Routes = [

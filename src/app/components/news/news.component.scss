@@ -10,7 +10,6 @@
   margin: 20px;
   height: 80px;
   width: 80px;
-  background: red;
 }
 
 .menu-buttons {
@@ -35,4 +34,27 @@
   height: 40px;
   width: 70%;
   text-overflow: ellipsis;
+}
+
+.select-source {
+  margin: 0 0 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.example-full-width {
+  margin: 0 0 0 60px;
+}
+
+.filter-button {
+  margin: 0 0 0 20px;
+}
+
+.my-news {
+  margin: 0 20px;
+}
+
+.load-more-button {
+  width: 100%;
+  margin: 0 0 80px 0;
 }
