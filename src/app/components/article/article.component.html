@@ -1,0 +1,32 @@
+<div class="news" (click)="details.emit(news)">
+  <div>
+    <img class="news-logo" src="{{news.urlToImage}}">
+  </div>
+
+  <div class="news-info">
+    <div class="news-title">
+      {{news.title}}
+    </div>
+
+    <div class="date-time">
+      {{news.publishedAt | date:'short' }}
+    </div>
+
+    <div class="content">
+      {{news.content}}
+      <div>
+        Read More...
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-buttons">
+    <div>
+      <button class="edit-button" mat-button (click)="edit.emit(news)">Edit</button>
+    </div>
+    <div>
+      <button class="delete-button" mat-button>Delete</button>
+    </div>
+  </div>
+
+</div>

@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { createCustomElement } from '@angular/elements';
 import { TitleComponent } from './components/title/title.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ArticleComponent } from './components/article/article.component';
+import { ComponentDirective } from './directives/component.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     NewsComponent,
     NewsDetailsComponent,
-    TitleComponent
+    TitleComponent,
+    ArticleComponent,
+    ComponentDirective
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule
   ],
   entryComponents: [
-    TitleComponent
+    TitleComponent,
+    ArticleComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

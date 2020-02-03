@@ -1,24 +1,23 @@
 <div class="news-details">
-    <div class="news-logo">
-
+    <div >
+      <img src="{{news.urlToImage}}" class="news-logo">
     </div>
 
     <div class="news-information">
       <div class="news-title">
-        Some news title
+        {{news.title}}
       </div>
 
       <div class="news-content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ea enim error et ex fuga ipsa ipsum, itaque
-        molestiae nam odit omnis, possimus, quae quidem rerum veritatis voluptas? Eum, molestias?
+        {{news.content}}
       </div>
 
       <div class="news-date-time">
-        Date: 10/10/1010 Time: 10.10
+        {{news.publishedAt | date:'short'}}
       </div>
 
       <div class="news-author">
-        Author
+        {{news.author}}
       </div>
     </div>
 

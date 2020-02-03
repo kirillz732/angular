@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { GetOneNewsService } from '../../services/get-one-news.service';
 
 @Component({
   selector: 'app-add-article',
@@ -10,21 +11,23 @@ import { Router } from '@angular/router';
 export class AddArticleComponent implements OnInit {
 
   news = {
-    heading: '',
+    title: '',
     description: '',
     content: '',
-    image: '',
-    date: '',
+    urlToImage: '',
+    publishedAt: '',
     author: '',
     url: '',
   };
 
   constructor(
-    private router: Router
+    private router: Router,
+    private getOneNewsService: GetOneNewsService
   ) {
   }
 
   ngOnInit() {
+    this.news = this.getOneNewsService.getNews();
   }
 
   goHome() {

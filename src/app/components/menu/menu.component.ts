@@ -15,8 +15,7 @@ export class MenuComponent implements OnInit {
   ) {
   }
 
-  source = '';
-  selected = 'technology';
+  source = 'technology';
 
   ngOnInit() {
   }
@@ -27,6 +26,6 @@ export class MenuComponent implements OnInit {
 
   selectSource(event) {
     this.source = event.value;
-    console.log(this.getInfoService.getNewsFromApi(5, this.source));
+    this.getInfoService.getNewsFromApi(5, this.source);
   }
 }
