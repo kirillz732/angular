@@ -5,9 +5,10 @@ import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angu
   templateUrl: './article.component.html',
   styleUrls: ['./article.component.scss']
 })
-export class ArticleComponent implements OnInit, OnDestroy{
+export class ArticleComponent implements OnInit, OnDestroy {
 
   @Input() news;
+  @Input() isMyNews;
   @Output() edit = new EventEmitter();
   @Output() details = new EventEmitter();
   @Output() destroy = new EventEmitter();

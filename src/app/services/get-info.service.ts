@@ -17,9 +17,9 @@ export class GetInfoService {
 
   getNewsFromApi(pageSize, category?) {
     this.http.get('https://newsapi.org/v2/top-headlines?pageSize=' + pageSize + '&category=' + category +
-    '&apiKey=52b388a921624383a19131605b5f1bfc').subscribe(({articles}) => {
-      this.newsSubject.next(articles);
-    })
+    '&apiKey=52b388a921624383a19131605b5f1bfc').subscribe((news) => {
+      this.newsSubject.next(news.articles);
+    });
   }
 
 }

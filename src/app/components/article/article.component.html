@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <div class="menu-buttons">
+  <div class="menu-buttons" *ngIf="isMyNews">
     <div>
       <button class="edit-button" mat-button (click)="edit.emit(news)">Edit</button>
     </div>

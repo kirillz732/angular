@@ -36,6 +36,7 @@ export class NewsComponent implements OnInit {
         const componentFactory = this.componentFactoryResolver.resolveComponentFactory(ArticleComponent);
         const componentRef = this.componentHost.viewContainerRef.createComponent(componentFactory);
         componentRef.instance.news = item;
+        componentRef.instance.isMyNews = false;
 
         const sub = new Subscription();
         sub.add(componentRef.instance.edit.subscribe(newsEdit => this.edit(newsEdit)));
