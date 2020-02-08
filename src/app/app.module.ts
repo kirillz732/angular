@@ -17,7 +17,7 @@ import { MatSelectModule } from '@angular/material/typings/select';
 import { MatButtonModule } from '@angular/material/typings/esm5/button';
 import { MatCheckboxModule } from '@angular/material/typings/checkbox';
 import { FormsModule } from '@angular/forms';
-import { createCustomElement } from '@angular/elements';
+// import { createCustomElement } from '@angular/elements';
 import { TitleComponent } from './components/title/title.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticleComponent } from './components/article/article.component';

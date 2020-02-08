@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { GetInfoService } from '../../services/get-info.service';
 
@@ -7,7 +7,7 @@ import { GetInfoService } from '../../services/get-info.service';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
   constructor(
     private router: Router,
@@ -16,9 +16,6 @@ export class MenuComponent implements OnInit {
   }
 
   source = 'technology';
-
-  ngOnInit() {
-  }
 
   addArticle() {
     this.router.navigate(['/add']);

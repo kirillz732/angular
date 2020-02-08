@@ -1,5 +1,5 @@
-// Karma configuration file, see link for more information
-// https://karma-runner.github.io/1.0/config/configuration-file.html
+// Karma configuration
+// Generated on Tue Feb 04 2020 14:03:55 GMT+0300 (Moscow Standard Time)
 
 module.exports = function (config) {
   config.set({
@@ -16,7 +16,7 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, './coverage/angular'),
+      dir: require('path').join(__dirname, './coverage'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
